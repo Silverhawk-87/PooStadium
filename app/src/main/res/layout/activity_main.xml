@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nomad.poo_stadium.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+    <TextView
+        android:id="@+id/txtv_p1name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Hello World!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtv_p2name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imv_p1"
+        android:layout_width="99dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_p1name"
+        app:srcCompat="@mipmap/mprabbit" />
+
+    <ImageView
+        android:id="@+id/imv_p2"
+        android:layout_width="89dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_p2name"
+        app:srcCompat="@mipmap/blkknight" />
+
+    <ImageView
+        android:id="@+id/imv_slash"
+        android:layout_width="200dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imv_p1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imv_p2"
+        app:srcCompat="@mipmap/slashing" />
+
+    <ImageView
+        android:id="@+id/imv_potion"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="24dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imv_slash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/pocion" />
+
+    <ImageView
+        android:id="@+id/imv_shield"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:visibility="invisible"
+        app:srcCompat="@mipmap/shield"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+</android.support.constraint.ConstraintLayout>
